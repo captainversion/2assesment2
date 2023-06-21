@@ -1,4 +1,7 @@
-a = {}
-for i in range(97, 123):
-    a[chr(i)] = i
-print(a)
+def last(n):
+    return n[-1] 
+def sort(a):
+    return sorted( a, key=last)
+a=[(1, 5), (3, 4), (2, 3),(2,2),(5,1)]
+print("Sorted:")
+print(sort(a))
